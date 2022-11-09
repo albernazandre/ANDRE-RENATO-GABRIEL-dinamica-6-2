@@ -12,8 +12,42 @@
 </head>
 
 <body>
-  <!-- Seu código aqui -->
-  
+  <header class="header-trybe">
+    <h1>Trybe Hotel</h1>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3q0v72AJA-p9V_oPst_65uEG9dr1WxKN-ZYp_5gE&s">
+  </header>
+  <section class="hotel-form">
+  <div>
+    <label for="dataEntrada">Data de entrada:</label>
+    <input type="date" class="inputCheckin" id="dataEntrada" required>
+    <br>
+    <label for="dataSaida">Data de saída:</label>
+    <input type="date" class="inputCheckout" id="dataSaida" required>
+  </div>
+  <br><br>
+  <div>
+    <p>Acomodação</p>
+    <input type="radio" class="bedroom" name="quarto">
+    <label for="id">Comum</label>
+    <input type="radio" class="bedroom" name="quarto">
+    <label for="id">Club</label>
+    <input type="radio" class="bedroom" name="quarto">
+    <label for="id">Luxo</label>
+  </div>
+  </section>
+  <section class="hotel-form">
+    <label for="numPessoas">Número de Hóspedes</label>
+    <select class="nPessoas" id="numPessoas">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+    </select>
+  </section>
+  <section class="hotel-form">
+    <textarea placeholder="Observações"></textarea>
+  </section>
+  <button type="submit">Enviar</button>
 </body>
 
 </html>
